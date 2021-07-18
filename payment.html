@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Payment form</title>
+    <style>
+        body.pos_left{
+            position: relative;
+            left: 350px;
+        }
+        div {
+            position:inherit;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-right: 150px;
+            margin-left: 80px;
+            border-style: solid;
+            text-align:justify;
+            background-color: ghostwhite;
+            
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #e4e7df;
+}
+    </style>
+</head>
+<div>
+<body class="pos_left">
+    <h1>Payment</h1>
+    <form action="/action_page.php" autocomplete="on">
+        
+        <label for="name">Name on Card:</label><br>
+        
+        <input id="name" placeholder="enter your name..." type="text"/><br><br>
+
+        <label for="Card Type">Card Type:</label><br>
+        <select>
+            <option>--Select Card Type--</option>
+            <option>MasterCard</option>
+            <option>Visa</option>
+        </select><br><br>
+
+        <label for="Card Number">Card Number:</label><br>
+        <input id="Card Number" placeholder="1234 4567 6789 9999" type="text" /><br><br>
+
+        <label for="Card Expire Date">Card Expire Date:</label><br>
+        <input type="date" id="Card Expire Date"/><br><br>
+
+        <label for="CVV">CVV:</label><br>
+        <input id="CVV"  placeholder="123" type="text" /><br><br>
+
+        <label for="Card Type">Card Type:</label><br>
+        <select>
+            <option>--Select Card Type--</option>
+            <option>MasterCard</option>
+            <option>Visa</option>
+        </select><br><br>
+
+        <h1>Billing Address</h1>
+
+        <label for="Name"><i class="glyphicon glyphicon-user"></i>Full Name:</label><br>
+        <input id="Name" placeholder="ketki S. Dabke" type="text"/><br><br>
+       
+        <label for="em"><i class="glyphicon glyphicon-envelope"></i>Email:</label><br>
+        <input id="em" placeholder="ketki.dabke2002@gmail.com" type="text"/><br><br>
+
+        <label for="Contact Number"><i class="glyphicon glyphicon-earphone"></i>Contact Number:</label><br>
+        <input id="Contact Number" placeholder="enter your mobile no..." type="text"/><br><br>
+
+        <label for="Country"><i class="glyphicon glyphicon-globe"></i>Country:</label><br>
+        <select>
+        <option>--Select Country--</option>
+        <option>India</option>
+        <option>China</option>
+        <option>Thailand</option>
+        <option>SouthKorea</option>
+        <option>Japan</option>
+        <option>Africa</option>
+        <option>America</option>
+        <option>Africa</option>
+        </select><br><br>
+
+        <label for="Pincode">Pincode:</label><br>
+        <input id="Pincode" placeholder="enter your Pincode..." type="text"/><br><br>
+        
+        <label for="Address">Address:</label><br>
+        <input id="Address" placeholder="enter Address..."  type="text" /><br><br>
+
+        <input type="checkbox" id="order" name="order" value="bill">
+        <label for="order">Shipping address same as billing</label><br><br>
+        <button>Pay Now!</button>
+
+
+    </form>
+</div>
+</body>
+</html>
